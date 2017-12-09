@@ -512,6 +512,9 @@
      <property name="wordWrap">
       <bool>true</bool>
      </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
     </widget>
    </item>
   </layout>
