@@ -31,11 +31,29 @@
      </widget>
     </item>
     <item>
+     <widget class="QPushButton" name="killButton">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Kill Screenshot</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="fullscreenButton">
       <property name="font">
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Toggle Fullscreen</string>
@@ -92,14 +110,6 @@
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QStatusBar" name="statusBar">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="sizeGripEnabled">
-    <bool>true</bool>
-   </property>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

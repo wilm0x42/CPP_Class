@@ -444,7 +444,7 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -501,7 +501,7 @@
       <bool>false</bool>
      </property>
      <property name="text">
-      <string>WIP</string>
+      <string> </string>
      </property>
      <property name="scaledContents">
       <bool>false</bool>

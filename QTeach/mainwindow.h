@@ -5,6 +5,8 @@
 #include <QPixmap>
 #include <QShortcut>
 #include <QProcess>
+#include <QTime>
+#include <QTimer>
 #include "disp.h"
 
 namespace Ui
@@ -26,12 +28,15 @@ private slots:
     void toggleFullscreen();
     void takeScreenshot();
     void screenshotReady(int,QProcess::ExitStatus);
+    void showTime();
+    void killScreenshot();
 
 private:
     Ui::MainWindow *ui;
     Disp* display;
     bool dispFullscreen;
     QShortcut* ctrlEnter;
+    QShortcut* escape;
 };
 
 #endif // MAINWINDOW_H

@@ -15,9 +15,18 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->textButton, SIGNAL (released()), this,SLOT(showText()));
     connect(ui->imgButton, SIGNAL (released()), this, SLOT(takeScreenshot()));
     connect(ui->fullscreenButton, SIGNAL (released()), this, SLOT (toggleFullscreen()));
+    connect(ui->killButton, SIGNAL (released()), this, SLOT(killScreenshot()));
 
     ctrlEnter = new QShortcut(QKeySequence("Ctrl+Return"), this);
     connect(ctrlEnter, SIGNAL(activated()), SLOT(showText()));
+
+    escape = new QShortcut(QKeySequence("Escape"), this);
+    connect(escape, SIGNAL(activated()), SLOT(close()));
+
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
+    timer->start(1000);
+    showTime();
 }
 MainWindow::~MainWindow()
 {
@@ -53,4 +62,15 @@ void MainWindow::toggleFullscreen()
 {
     dispFullscreen = !dispFullscreen;
     display->setFullscreen(dispFullscreen);
+}
+
+void MainWindow::showTime()
+{
+    QTime time = QTime::currentTime();
+    ui->clock->setText(time.toString("h:mm a"));
+}
+
+void MainWindow::killScreenshot()
+{
+    display->setText(" ");
 }
