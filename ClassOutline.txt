@@ -1,0 +1,8 @@
+
+Compilers, Structure of a program, examples
+review, Variables and types, constants, operators pt 1, examples
+review, basic input/output, examples, if statements, operators pt 2, examples
+review, while loop, examples, for loops, examples
+review, functions (basic), examples,
+review, arrays, character sequences, examples
+review, Input/Output with files, examples
