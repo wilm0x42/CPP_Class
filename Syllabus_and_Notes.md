@@ -2,13 +2,13 @@
 
  Class   | Material Covered
 ---------|-----------------
-1/15/18  | Compilers, Structure of a program
-1/22/18  | Variables and Types, Constants, Operators pt. 1
-1/29/18  | Basic Input/Output, _(examples)_, If Statements, Operators pt. 2
-2/5/18   | While Loop, _(examples)_, For Loop
-2/12/18  | Arrays, Character Sequences
-2/19/18  | Input/Output with Files
-2/26/18  | Functions (basic)
+2/1/18   | Compilers, Structure of a program
+2/8/18   | Variables and Types, Constants, Operators pt. 1
+2/15/18  | Basic Input/Output, _(examples)_, If Statements, Operators pt. 2
+2/22/18  | While Loop, _(examples)_, For Loop
+3/1/18   | Arrays, Character Sequences
+3/8/18   | Data Structures (basic), Functions (basic)
+3/15/18  | Input/Output with Files
 
 ## Class Structure
 
