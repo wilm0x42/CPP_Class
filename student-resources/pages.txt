@@ -1,0 +1,3 @@
+http://www.cppforschool.com/assignment/variable_1.html
+http://www.cppforschool.com/assignment/variable_2.html
+http://www.cppforschool.com/assignment/variable_3.html

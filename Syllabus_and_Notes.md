@@ -1,14 +1,15 @@
 # Syllabus for new students
 
- Class   | Material Covered
----------|-----------------
-2/1/18   | Compilers, Structure of a program
-2/8/18   | Variables and Types, Constants, Operators pt. 1
-2/15/18  | Basic Input/Output, _(examples)_, If Statements, Operators pt. 2
-2/22/18  | While Loop, _(examples)_, For Loop
-3/1/18   | Arrays, Character Sequences
-3/8/18   | Data Structures (basic), Functions (basic)
-3/15/18  | Input/Output with Files
+ Class   | Homework | Material Covered
+---------|----------|-----------------
+2/1/18   | No       | Compilers, Structure of a program
+2/8/18   | TBD      | Variables and Types, Constants, Operators pt. 1
+2/15/18  | Yes      | Basic Input/Output, _(examples)_, If Statements, Operators pt. 2
+2/22/18  | Yes      | While Loop, _(examples)_, For Loop
+3/1/18   | No       | _Review Week_
+3/8/18   | Yes      | Arrays, Character Sequences
+3/15/18  | Yes      | Data Structures (basic), Functions (basic)
+3/22/18  | Yes      | Input/Output with Files
 
 ## Class Structure
 
