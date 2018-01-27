@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->imgButton, SIGNAL (released()), this, SLOT(takeScreenshot()));
     connect(ui->fullscreenButton, SIGNAL (released()), this, SLOT (toggleFullscreen()));
     connect(ui->killButton, SIGNAL (released()), this, SLOT(killScreenshot()));
+    connect(ui->textSizeSlider, SIGNAL (valueChanged(int)), this, SLOT(showText()));
 
     ctrlEnter = new QShortcut(QKeySequence("Ctrl+Return"), this);
     connect(ctrlEnter, SIGNAL(activated()), SLOT(showText()));
@@ -35,7 +36,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::showText()
 {
-   display->setText(ui->textEdit->toPlainText());
+   display->setText(ui->textEdit->toPlainText(), ui->textSizeSlider->value());
 }
 
 void MainWindow::showImg(QPixmap pic)
@@ -72,5 +73,5 @@ void MainWindow::showTime()
 
 void MainWindow::killScreenshot()
 {
-    display->setText(" ");
+    display->setText(" ", 1);
 }

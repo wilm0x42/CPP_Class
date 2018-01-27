@@ -1,3 +1,5 @@
 http://www.cppforschool.com/assignment/variable_1.html
-http://www.cppforschool.com/assignment/variable_2.html
-http://www.cppforschool.com/assignment/variable_3.html
+http://www.cppforschool.com/assignment/flow_1.html
+http://www.cppforschool.com/assignment/flow_2.html
+http://www.cppforschool.com/assignment/user_1.html
+http://www.cppforschool.com/assignment/array_1.html

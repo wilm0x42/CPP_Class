@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QPixmap>
+#include <QFont>
 
 namespace Ui {
 class Disp;
@@ -16,7 +17,7 @@ public:
     explicit Disp(QWidget *parent = 0);
     ~Disp();
 
-    void setText(QString text);
+    void setText(QString text, int tsize);
     void setImg(QPixmap pic);
     void setFullscreen(bool onoff);
 

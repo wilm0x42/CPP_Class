@@ -16,9 +16,12 @@ Disp::~Disp()
     delete ui;
 }
 
-void Disp::setText(QString text)
+void Disp::setText(QString text, int tsize)
 {
     this->ui->label->setText(text);
+    QFont font = this->ui->label->font();
+    font.setPointSize(tsize);
+    this->ui->label->setFont(font);
 }
 
 void Disp::setImg(QPixmap pic)

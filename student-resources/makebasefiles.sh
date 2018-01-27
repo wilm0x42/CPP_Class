@@ -31,4 +31,5 @@ while [ $(wc -l tmp/lines | cut -d" " -f1) -gt $curLine ]; do
 	mv redohtml/output.html basefiles/$curLine.html
 done
 
+echo Coping bg.svg...
 cp redohtml/bg.svg basefiles/bg.svg
