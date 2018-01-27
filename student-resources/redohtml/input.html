@@ -3,8 +3,8 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="../favicon.gif" />
-<meta name="Description" content="C++ assignment on User Defined Functions" />
-<meta name="Keywords" content="C++ Assignment, Question, function" />
+<meta name="Description" content="C++ Programming Questions on Single Dimension Array. Basic operation on Array Linear Search, Binary Search, Selection Sort, Insertion Sort, Bubble Sort and Merge Sort" />
+<meta name="Keywords" content="C++ Assignment, Question, Array, Binary,Linear,Search,Bubble,Selection,Insertion,Merge,Sort" />
 
 <meta name="Distribution" content="Global" />
 
@@ -32,11 +32,10 @@
 <script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script src="../js/functions.js" type="text/javascript"></script>
 <link href="../css/astyle.css" rel="stylesheet" type="text/css" />
-<title>User Defined Function - C++ Programming Questions</title>
+<title>Single Dimension Array - C++ Programming Question</title>
 </head>
 
-<body>
-<!-- BEGIN wrapper -->
+<body><!-- BEGIN wrapper -->
 <div id="wrapper">
   <!-- BEGIN header -->
   <div id="header">
@@ -112,244 +111,81 @@
 
 <div id="content"><table width="100%">
     <tr>
-      <th width="70%"><div align="left"><a href="../assignments.html">Assignments</a>&nbsp;&raquo;&nbsp;<a href="../assignments.html">User Defined Function </a>&raquo; Set1</div></th>
-      <th width="30%"><a href="user_1.doc"><img src="../images/download_assignment.png" width="108" height="48" border="0" /></a></th>
-    </tr></table><div class="post">  
-  <h2 class="aligncenter"><strong>User Defined Function</strong><br />
+      <th width="70%"><div align="left"><a href="../assignments.html">Assignments</a>&nbsp;&raquo;&nbsp;<a href="../assignments.html">Array - Single Dimension </a>&raquo; Set1</div></th>
+      <th width="30%"><a href="array_1.doc"><img src="../images/download_assignment.png" width="108" height="48" border="0" /></a></th>
+    </tr></table>
+  
+  <div class="post">  
+  <h2 class="aligncenter"><strong>array-single dimension</strong><br />
   [SET &ndash; 1]</h2>
   <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <tr>
       <td width="13%" valign="top"><p><strong>1 </strong></p></td>
-      <td width="87%" valign="top"><p>Write a program using function which accept two integers as an argument and return its sum. Call this function from main( ) and print the results in main( ). <a href="user-defined-functions-sol/sum-function.html"><em>solution</em></a></p></td>
+      <td width="87%" valign="top"><p>Write a C++ program to find the sum and average of one dimensional integer array.<a href="array-1d-sol/sum-of-array.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>2 </strong></p></td>
-      <td valign="top"><p>Write a function to calculate the factorial value of any integer as an argument. Call this function from main( ) and print the results in main( ). <a href="user-defined-functions-sol/factorial-function.html"><em>solution</em></a></p></td>
+      <td valign="top"><p>Write a C++ program to swap first and last element of an integer 1-d array.<a href="array-1d-sol/swap-array.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>3 </strong></p></td>
-      <td valign="top"><p>Write a function that receives two numbers as an argument and display all prime numbers between these two numbers. Call this function from main( ). <a href="user-defined-functions-sol/prime-number.html"><em>solution</em></a></p></td>
+      <td valign="top"><p>Write a C++ program to reverse the element of an integer 1-D array.<a href="array-1d-sol/reverse-array.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>4 </strong></p></td>
-      <td valign="top"><p>Raising a number to a power p is the same as multiplying n by itself p times. Write a function called power that takes two arguments, a double value for n and an int value for p, and return the result as double value. Use default argument of 2 for p, so that if this argument is omitted the number will be squared. Write the main function that gets value from the user to test power function. <a href="user-defined-functions-sol/power-function.html"><em>solution</em></a></p></td>
+      <td valign="top"><p>Write a C++ program to find the largest and smallest element of an array.<a href="array-1d-sol/smallest-element-array.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>5 </strong></p></td>
-      <td valign="top"><p>Write a function called zero_small() that has two integer arguments being passed by reference and sets the smaller of the two numbers to 0.  Write the main program to access the function. <a href="user-defined-functions-sol/zero-small.html"><em>solution</em></a></p></td>
+      <td valign="top"><p>Write a menu driven C++ program with following option
+          <br />
+          a.	Accept elements of an array
+          <br />
+          b.	Display elements of an array
+          <br />
+          c.	Sort the array using insertion sort method
+          <br />
+          d.	Sort the array using selection sort method
+          <br />
+          e.	Sort the array using bubble sort method
+          <br />
+          Write C++ functions for all options. The functions should have two parameters name of the array and number of elements in the array.
+          <a href="array-1d-sol/sorting-array.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>6 </strong></p></td>
-      <td valign="top"><p>Write the output of the following program : 
-          </p>
-          <pre>#include &lt;iostream&gt;
-using namespace std;
-
-void X(int &A, int &B)
-{
-    A = A + B;
-    B = A - B;
-    A = A - B;
-}
-
-int main()
-{
-    int a = 4, b = 18;
-    X(a,b);
-    cout << a << ", " << b;
-    
-    return 0;
-}
-       </pre>
- <p><button class="round" onclick="$('#answer1').slideToggle();">Show the answer.</button></p>
-<div id="answer1" style="display:none;">
-<pre>
-18, 4
-</pre>
-</div>
-           </td>
+      <td valign="top"><p>P is one-dimensional array of integers. Write a C++ function to efficiently search for a data VAL from P. If VAL is present in the array then the function should return value 1 and 0 otherwise.<a href="array-1d-sol/linear-search.html"><em> solution</em></a> </p>
+        </td>
     </tr>
     <tr>
       <td valign="top"><p><strong>7 </strong></p></td>
-      <td valign="top"><p>Write the output of the following program: <br /></p>
-        <pre>#include &lt;iostream&gt;
-using namespace std;
-
-void X(int A, int &amp;B)
-{
-    A = A + B;
-    B = A - B;
-    A = A - B;
-}
-
-int main()
-{
-    int a = 4, b = 18;
-    X(a,b);
-    cout &lt;&lt; a &lt;&lt; &quot;, &quot; &lt;&lt; b;
-    
-    return 0;
-}
-        </pre>
-         <p><button class="round" onclick="$('#answer2').slideToggle();">Show the answer.</button></p>
-<div id="answer2" style="display:none;">
-<pre>
-4, 4
-</pre>
-</div>
-</td>
+      <td valign="top"><p>Suppose a one-dimensional array AR containing integers is arranged in ascending order. Write a user-defined function in C++ to search for an integer from AR with the help of Binary search method, returning an integer 0 to show absence of the number and integer 1 to show presence of the number in the array. Function should have three parameters : (i) array AR (ii) the number to be searched and (iii) the number of elements N in the array.<a href="array-1d-sol/binary-search.html"><em> solution</em></a> </p>
+          
+        </td>
     </tr>
     <tr>
       <td valign="top"><p><strong>8 </strong></p></td>
-      <td valign="top"><p>Write the output of the following program: </p>
-      
-<pre>#include &lt;iostream&gt;
-using namespace std;
-
-void Execute(int &B, int C = 100)
-{
-    int temp = B + C;
-    B += temp;
-    if (C == 100)
-        cout << temp << " " << B << " " << C << endl;
-}
-
-int main()
-{ 
-    int M = 90, N = 10;
-    Execute(M);
-    cout << M << " " << N << endl;
-    Execute(M, N);
-    cout << M << " " << N << endl;
-    
-    return 0;
-}
-
-</pre>
- <p><button class="round" onclick="$('#answer3').slideToggle();">Show the answer.</button></p>
-<div id="answer3" style="display:none;">
-<pre>
-190 280 100
-280 10
-570 10
-</pre>
-</div>
-</td>
+      <td valign="top"><p>Suppose A, B, C are arrays of integers of size M, N, and M + N respectively. The numbers in array A appear in ascending order while the numbers in array B appear in descending order. Write a user defined function in C++ to produce third array C by merging arrays A and B in ascending order. Use A, B and C as arguments in the function.	<a href="array-1d-sol/merge-sort-ascending.html"><em> solution</em></a> </p></td>
     </tr>
     <tr>
       <td valign="top"><p><strong>9</strong></p></td>
-      <td valign="top"><p>Give the output of the following program</p>
-      <pre>#include &lt;iostream&gt;
-using namespace std;
-
-int global = 10;
-
-void func(int &x, int y)
-{
-    x = x - y;
-    y = x * 10;
-    cout << x << ", " << y << '\n';
-}
-
-int main()
-{
-    int global = 7;
-    func (::global, global);
-    cout << global << ", " << ::global << '\n';
-    
-    func(global, ::global);
-    cout << global << ", " << ::global << '\n';
-    
-    return 0;
-} 
-      </pre>
-<p><button class="round" onclick="$('#answer4').slideToggle();">Show the answer.</button></p>
-<div id="answer4" style="display:none;">
-<pre>
-3, 30
-7, 3
-4, 40
-4, 3
-</pre>
-</div>
-
-                </td>
+      <td valign="top"><p>Suppose X. Y, Z are arrays of integers of size M, N, and M + N respectively. The numbers in array X and Y appear in descending order. Write a user-defined function in C++ to produce third array Z by merging arrays X and Y in descending order.<a href="array-1d-sol/merge-sort-descending.html"><em> solution</em></a> </p>
+          </td>
     </tr>
     <tr>
       <td valign="top"><p><strong>10</strong></p></td>
-      <td valign="top"><p>Write the output of the following program :</p>
-<pre>
-#include &lt;iostream&gt;
-using namespace std;
-
-static int i = 100;
-void abc()
-{
-    static int i = 8;
-    cout << "first = " << i++ << endl;
-}
-
-int main()
-{
-    static int i = 2;
-    abc();
-    cout << "second = " << i << endl;
-    abc();
-    
-    return 0;
-}
-
-</pre>
-<p><button class="round" onclick="$('#answer5').slideToggle();">Show the answer.</button></p>
-<div id="answer5" style="display:none;">
-<pre>
-first = 8
-second = 2
-first = 9</pre>
-</div>
-</td>
-    </tr>
-<tr>
-      <td valign="top"><p><strong>11</strong></p></td>
-      <td valign="top"><p>Write the output of the following program:
-      </p>
-<pre>
-#include &lt;iostream&gt;
-using namespace std;
-
-int func(int &x, int y = 10)
-{
-    if (x % y == 0)
-        return ++x;
-    else 
-        return y--;
-}
-
-int main()
-{
-    int p = 20, q = 23;
-
-    q = func(p, q);
-    cout << p << " " << " " << q << endl;
-    
-    p = func (q);
-    cout << p << " " << " " << q << endl;
-
-    q = func (p);
-    cout << p << " " << " " << q << endl;
-    
-    return 0;
-}
-
-</pre>     
-<p><button class="round" onclick="$('#answer6').slideToggle();">Show the answer.</button></p>
-<div id="answer6" style="display:none;">
-<pre>
-20 23
-10 23
-11 11</pre>
-</div> 
-      </td>
+      <td valign="top"><p>	Given two arrays of integers A and B of sizes M and N respectively. Write a function named MIX () with four arguments, which will produce a third array named C. such that the following sequence is followed.
+          <br />
+          All even numbers of A from left to right are copied into C from left to right.
+          <br />
+          All odd numbers of A from left to right are copied into C from right to left.
+          <br />
+          All even numbers of B from left to right are copied into C from left to right.
+          <br />
+          All old numbers of B from left to right are copied into C from right to left.<br /> 
+          A, B and C are passed as arguments to MIX ().
+e.g., A is {3, 2, 1, 7, 6, 3} and B is {9, 3, 5, 6, 2, 8, 10} the resultant array C is {2, 6, 6, 2, 8, 10, 5, 3, 9, 3, 7, 1, 3}
+</p></td>
     </tr>
   </table>
   </div>
@@ -357,9 +193,9 @@ int main()
     <tr>
       <th width="70%"><div align="left">&laquo;<a href="../assignments.html"> back</a></div></th>
       <th width="30%">&nbsp;</th>
-    </tr></table></div></div>
+    </tr></table></div>
 	
- 
+ </div>
 
 <!--content ends-->
 
@@ -367,7 +203,48 @@ int main()
 <!-- BEGIN sidebar -->
   <div id="sidebar">
     
-	
+<div class="tags">
+  <script type="text/javascript"><!--
+google_ad_client = "ca-pub-8001115649311088";
+/* linknew */
+google_ad_slot = "7146551815";
+google_ad_width = 200;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+  
+  </div>
+  <div class="tags">
+  <script type="text/javascript"><!--
+google_ad_client = "ca-pub-8001115649311088";
+/* linknew */
+google_ad_slot = "7146551815";
+google_ad_width = 200;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+  
+  </div>
+    <div class="advt">
+    <script type="text/javascript"><!--
+google_ad_client = "ca-pub-8001115649311088";
+/* 300X250box */
+google_ad_slot = "3805282614";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    
+    </div>	
     	
     <!-- begin advt -->
     <div class="advt">

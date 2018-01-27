@@ -9,7 +9,7 @@
 3/1/18   | No       | _Review Week_
 3/8/18   | Yes      | Arrays, Character Sequences
 3/15/18  | Yes      | Data Structures (basic), Functions (basic)
-3/22/18  | Yes      | Input/Output with Files
+3/22/18  | No       | Input/Output with Files
 
 ## Class Structure
 

@@ -3,3 +3,4 @@ http://www.cppforschool.com/assignment/flow_1.html
 http://www.cppforschool.com/assignment/flow_2.html
 http://www.cppforschool.com/assignment/user_1.html
 http://www.cppforschool.com/assignment/array_1.html
+http://www.cppforschool.com/assignment/string_1.html

@@ -9,5 +9,12 @@ fs.readFile('./input.html', function (err, data)
 	}
 	$ = cheerio.load(data);
 	
+	
+	//Convert links
+	$('a').each(function(i, elem)
+	{
+		$(this).attr("href", "http://www.cppforschool.com/assignment/" + $(this).attr("href"));
+	});
+	
 	console.log($("div .post").html());
 });
