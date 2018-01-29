@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+	  h2
+	  {
+	   padding: 8px 0px;
+	   text-align: center;
+	   background-color: #FFFFFF;
+	   background: linear-gradient(to right, rgba(230,230,230,0.5), rgba(255,255,255,1), rgba(230,230,230,0.5));
+	   border-left: 5px solid;
+	   border-right: 5px solid
+	  }
+
+	  body
+	  {
+	   background-color: #FFFFFF;
+	   background-image: url(bg.svg);
+	   background-repeat: tile-y;
+	   background-attachment: fixed;
+	   background-size: 100%;
+	   overflow-x: hidden;
+	  }
+
+	  #docContent
+	  {
+	   background-color: #FFFFFF;
+	   background: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,1), rgba(255,255,255,0.85));
+	   color: #000000;
+
+	   border-top-style: solid;
+	   border-bottom-style: solid;
+	   border-color: #0F0F0F;
+	   border-width: 3px;
+	   border-radius: 0px 0px 30px 30px;
+	   box-shadow: 8px 16px 25px rgba(0,0,0,0.5);
+
+	   margin: auto;
+	   padding: 0px 1%;
+	   width: 65%;
+
+	  }
+ </style>
+</head>
+<body>
+	<div id="docContent">
+	
+	  
+  
+  <h2 class="aligncenter"><strong>Functions</strong><br>
+</h2>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tbody><tr>
+      <td width="13%" valign="top"><p><strong>1 </strong></p></td>
+      <td width="87%" valign="top"><p>Write a function which accepts two integers as an argument and return its sum. Call this function from main(), then print the results. <a href="http://www.cppforschool.com/assignment/user-defined-functions-sol/sum-function.html"><em>solution</em></a></p></td>
+    </tr>
+    <tr>
+      <td valign="top"><p><strong>2 </strong></p></td>
+      <td valign="top"><p>Raising a number (n) to a power (p) is the same as multiplying (n) by itself (p) times. Write a function that takes two arguments, integers n and p, and return the value of "n" raised to the power of "p". Write an int main() that demonstrates this function. <a href="http://www.cppforschool.com/assignment/user-defined-functions-sol/power-function.html"><em>solution</em></a></p></td>
+    </tr>
+    <tr>
+      <td valign="top"><p><strong>3 </strong></p></td>
+      <td valign="top"><p>Write the output of the following program : 
+          </p>
+          <pre>#include &lt;iostream&gt;
+using namespace std;
+
+void X(int &amp;A, int &amp;B)
+{
+    A = A + B;
+    B = A - B;
+    A = A - B;
+}
+
+int main()
+{
+    int a = 4, b = 18;
+    X(a,b);
+    cout &lt;&lt; a &lt;&lt; &quot;, &quot; &lt;&lt; b;
+    
+    return 0;
+}
+       </pre>
+ <p><button class="round" onclick="$(&apos;#answer1&apos;).slideToggle();">Show the answer.</button></p>
+<div id="answer1" style="display:none;">
+<pre>18, 4
+</pre>
+</div>
+<sup>(Teacher's note: I think this kind of question REALLY sucks, so I'm only making you do one of them.)</sup>
+           </td>
+    </tr>
+  </tbody></table>
+  
+
+	</div>
+	
+	<p style="text-align: center">Assignments courtesy of <a href="http://www.cppforschool.com">cppforschool.com</a></p>
+</body>
+</html>
