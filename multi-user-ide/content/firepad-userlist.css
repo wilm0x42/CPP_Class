@@ -1,7 +1,7 @@
 .firepad-userlist {
   /* default height */
   height: 400px;
-  min-width: 175px;
+  /* min-width: 175px; */
 
   background: #ebebeb; /* Old browsers */
   background: -moz-linear-gradient(left, #ebebeb 0%, #eaeaea 93%, #d9d9d9 100%); /* FF3.6+ */
