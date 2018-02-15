@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+  <!-- ACE and its JavaScript mode and theme files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/mode-c_cpp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/theme-github.js"></script>
+
+  <!-- Firepad -->
+  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
+  <script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
+  
+  <!-- Include example userlist script / CSS.
+       Can be downloaded from: https://github.com/firebase/firepad/tree/master/examples/ -->
+  <script src="firepad-userlist.js"></script>
+  <link rel="stylesheet" href="firepad-userlist.css" />
+
+  <style>
+    html { height: 100%; }
+    body
+    {
+    	margin: 0;
+    	height: 100%;
+    	position: relative;
+    	overflow: hidden;
+    }
+    
+    #userlist
+    {
+    	position: absolute;
+    	left:0%;
+    	top: 30%;
+    	right: 85%;
+    	bottom: 0;
+    	border: 1px solid black;
+    }
+
+    #firepad-container
+    {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        bottom: 0;
+        left: 15%;
+        right: 0;
+        
+        border: 1px solid black;
+    }
+    
+    #controls
+    {
+    	margin: 0;
+    	padding: 0px 10px;
+        position: absolute;
+        top: 0%;
+        bottom: 70%;
+        left: 0%;
+        right: 70%;
+        
+        border: 1px solid black;
+    }
+    
+    #outputBox
+    {
+    	margin: 0;
+        position: absolute;
+        top: 0%;
+        bottom: 70%;
+        left: 30%;
+        right: 0%;
+        
+        border: 1px solid black;
+        overflow: auto;
+    }
+    
+    .control
+    {
+    	font-size: 20px;
+    }
+  </style>
+</head>
+
+<body onload="init()">
+
+  <div id="firepad-container" style="font-size: 16px;" ></div>
+  <div id="controls">
+		<center style="text-decoration: underline;">Controls</center>
+		<button class="control" onclick="buildCode();">Run</button>
+  </div>
+	
+  <div id="outputBox">
+    <center style="text-decoration: underline;">Output</center>
+	<p id="output"></p>
+  </div>
+
+  <div id="userlist"></div>
+
+  <script>
+    var editor;
+    
+    function init()
+    {
+      //// Initialize Firebase.
+      //// TODO: replace with your Firebase project configuration.
+      var config =
+      {
+        apiKey: "AIzaSyC_JdByNm-E1CAJUkePsr-YJZl7W77oL3g",
+        authDomain: "firepad-tests.firebaseapp.com",
+        databaseURL: "https://firepad-tests.firebaseio.com"
+      };
+      firebase.initializeApp(config);
+
+      //// Get Firebase Database reference.
+      var firepadRef = getExampleRef();
+
+      //// Create ACE
+      editor = ace.edit("firepad-container");
+      editor.setTheme("ace/theme/github");
+      editor.setShowPrintMargin(false);
+      var session = editor.getSession();
+      session.setUseWrapMode(true);
+      //session.setUseWorker(false);
+      session.setMode("ace/mode/c_cpp");
+      
+      // Create a random ID to use as our user ID (we must give this to firepad and FirepadUserList).
+      var userId = Math.floor(Math.random() * 9999999999).toString()
+
+      //// Create Firepad.
+      var firepad = Firepad.fromACE(firepadRef, editor, {
+        defaultText: '#include <iostream>\nusing namespace std;\n\nint main()\n{\n\tcout << "hello world";\n}\n',
+        userId: userId
+      });
+      
+      var firepadUserList = FirepadUserList.fromDiv(firepadRef.child('users'), document.getElementById('userlist'), userId);
+    }
+
+    // Helper to get hash from end of URL or generate a random one.
+    function getExampleRef()
+    {
+      var ref = firebase.database().ref();
+      //var hash = window.location.hash.replace(/#/g, '');
+      //so we only have one instance
+      var hash = "-L5L2ZNxy-6mWuhAoIBd";
+      if (hash)
+      {
+        ref = ref.child(hash);
+      } else
+      {
+        ref = ref.push(); // generate unique location.
+        window.location = window.location + '#' + ref.key; // add it as a hash to the URL.
+      }
+      if (typeof console !== 'undefined')
+      {
+        console.log('Firebase data: ', ref.toString());
+      }
+      return ref;
+    }
+    
+	
+    function buildCode()
+    {
+    	document.getElementById('output').textContent = "Compiling..."
+    	var req;
+    	
+    	if (window.XMLHttpRequest)
+    	{
+    		req = new XMLHttpRequest();// code for modern browsers
+		} else
+		{
+    		req = new ActiveXObject("Microsoft.XMLHTTP");// code for old IE browsers
+		}
+		
+		req.onreadystatechange = function()
+		{
+			if (this.readyState == 4 && this.status == 200)
+			{
+				var output = document.getElementById("output");
+				output.textContent = this.responseText;
+				output.innerHTML = output.innerHTML.replace(/\n/g, '<br>\n');
+			}
+		};
+		req.open("POST", "buildCode", true);
+		req.setRequestHeader("Content-type", "text/plain");
+		req.send(editor.getValue());
+    }
+  </script>
+</body>
+</html>

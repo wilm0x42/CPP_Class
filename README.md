@@ -8,4 +8,5 @@ by jekyll, but I haven't added the source files for that to the repo yet.
 * `QTeach/` - Sources for the program I wrote to give presentations on the fly.
 I mostly use this for lectures.
 * `QTeach-bin` - Linux binary of QTeach, for convenience.
-* `student-resources` - Various resources that'll be given to students for the class. (assignments, etc.)
+* `student-resources/` - Various resources that'll be given to students for the class. (assignments, etc.)
+* `multi-user-ide/` - Browser-based IDE to allow several students to work on the same program at once.
