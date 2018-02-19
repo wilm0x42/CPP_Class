@@ -67,7 +67,7 @@ var server = http.createServer(function (req, res)
 
 	console.log("Redirecting to /code");
 	res.setHeader("Location", "/code");
-	res.writeHead(301, {'Content-Type': 'text'});
+	res.writeHead(307, {'Content-Type': 'text'});
 	res.end("");
 }).listen(80);
 
