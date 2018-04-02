@@ -26,3 +26,12 @@
 * Examples
 * Assignments -- In class
 * Assignments -- Homework
+
+
+# (4/1/18) Plans for continuing advanced class
+* File I/O
+* Classes
+* Preprocessor Directives
+* Multi-file project
+* git?
+* Exceptions
