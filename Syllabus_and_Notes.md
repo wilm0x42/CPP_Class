@@ -29,9 +29,10 @@
 
 
 # (4/1/18) Plans for continuing advanced class
-* File I/O
-* Classes
-* Preprocessor Directives
-* Multi-file project
-* git?
-* Exceptions
+[*] File I/O
+[*] Preprocessor Directives
+[] Classes
+[] **namespaces**
+[] Multi-file project
+[] git?
+[] Exceptions
