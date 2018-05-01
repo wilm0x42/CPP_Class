@@ -1,5 +1,5 @@
-# C++ Class
-This repo contains all the tools and resources I'm creating and using for the C++ class I teach.
+# C++ Class - now defunct
+This repo contains all the tools and resources I was creating and using for the C++ class I taught.
 
 Here's a summary of what you'll find in the root of this repo:
 
